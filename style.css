@@ -1,0 +1,85 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #c0cae1;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: var(--light);
+	background-color: var(--grey);
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background-color: var(--dark);
+  width: 35%;
+  height: 500px;
+   border-radius: 8px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--darker);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {  
+  background-color: #abcea1;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  color: var(--light);
+  border: 3px solid var(--purple);
+  background-color: var(--);
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
